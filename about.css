@@ -1,0 +1,65 @@
+/* ===========================
+   ABOUT — about.css
+   =========================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--gray);
+  font-size: 16px;
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+.about-text p strong {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(26,60,94,0.12);
+}
+
+.about-card-num {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.about-card-label {
+  font-size: 13px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
