@@ -20,7 +20,7 @@
        CSS-ONLY REPLACEMENTS FOR ALL JAVASCRIPT
        ============================================= */
 
-    /* --- FADE IN on load (replaces animations.js) --- */
+    /* --- FADE IN on load (replace animations.js) --- */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(28px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -37,7 +37,7 @@
     #projects { animation-delay: 0.4s; }
     #contact  { animation-delay: 0.5s; }
 
-    /* --- SKILL BARS animate on load (replaces skills.js) --- */
+    /* --- SKILL BARS animate on load (replace skills.js) --- */
     @keyframes fillBar { from { width: 0%; } }
 
     .skill-fill { animation: fillBar 1.4s cubic-bezier(0.4,0,0.2,1) forwards; }
@@ -47,10 +47,10 @@
     .skill-fill[data-width="20"] { width: 20%; animation-delay: 0.5s; }
     .skill-fill[data-width="30"] { width: 30%; animation-delay: 0.65s; }
 
-    /* For the 2nd skill-fill[data-width="30"] (C language) */
+    
     .skill-fill[data-width="30"]:last-of-type { animation-delay: 0.8s; }
 
-    /* --- CSS-ONLY HAMBURGER MENU (replaces navbar.js) --- */
+    
 
     /* Hide the checkbox */
     #nav-toggle {
@@ -76,7 +76,7 @@
       transition: all 0.3s ease;
     }
 
-    /* Animate hamburger to X when checked */
+    /* para ma x inig homan sa hamburger */
     #nav-toggle:checked ~ .nav-container .hamburger-label span:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
     }
@@ -108,12 +108,12 @@
     }
 
     /* --- NAVBAR always visible (replaces scrolled shadow via JS) --- */
-    /* Give navbar a subtle shadow at all times since we can't detect scroll */
+    /* para naay shadow gamay ang navbar */
     #navbar {
       box-shadow: 0 2px 20px rgba(26,60,94,0.08);
     }
 
-    /* --- CONTACT FORM note (no JS = no validation feedback) --- */
+    /* --- DI PA MA WORK AHAK -- */
     .no-js-note {
       font-size: 13px;
       color: var(--gray);
