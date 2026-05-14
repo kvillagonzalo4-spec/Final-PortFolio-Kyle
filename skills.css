@@ -30,7 +30,7 @@
 .skill-percent {
   font-size: 13px;
   font-weight: 500;
-  color: red(--accent);
+  color: var(--accent);
 }
 
 .skill-bar {
